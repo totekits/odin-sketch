@@ -10,3 +10,11 @@ for (let i = 0; i < rows; i++) {
         gridContainer.append(square);
     }
 }
+
+function handleHover(event) {
+    if (event.target.classList.contains('square')) {
+        event.target.style.backgroundColor = 'grey'; 
+    }
+}
+
+gridContainer.addEventListener('mouseover', handleHover);
