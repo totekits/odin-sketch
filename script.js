@@ -1,4 +1,5 @@
 const gridContainer = document.getElementById('grid-container');
+const button = document.getElementById('resize');
 
 const rows = 16;
 const cols = 16;
@@ -17,4 +18,9 @@ function handleHover(event) {
     }
 }
 
+function promptForNewSize(event) {
+    const newSize = prompt('Enter the number of squares per side for the new grid:')
+}
+
 gridContainer.addEventListener('mouseover', handleHover);
+button.addEventListener('click', promptForNewSize);
